@@ -35,7 +35,6 @@ class TwitterFeedList extends Component {
 	}
 
 	render() {
-		console.log("Rendering");
 		return (
 			<div>
 				<ul className="feed-list">
