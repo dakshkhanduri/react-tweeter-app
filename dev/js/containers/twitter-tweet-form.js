@@ -18,16 +18,17 @@ class TweetForm extends Component {
 	}
 
 	handleChange(event) {
-		//console.log(event.target.value);
+		console.log(event.target.value);
 	}
 
 	render() {
 		return (
 			<form onSubmit={(event) => this.handleSubmit(event)}>
 		        <label>
-		          <textarea id="inputTweet" onKeyPress={(event) => this.handleChange(event)} />
+		          <textarea id="inputTweet" onKeyUp={(event) => this.handleChange(event)} />
 		        </label>
 		        <input type="submit" value="Submit" />
+		        <span></span>
 		    </form>
 		);
 	}

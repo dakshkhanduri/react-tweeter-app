@@ -4,7 +4,7 @@ import TweetForm from '../containers/twitter-tweet-form';
 require('../../scss/style.scss');
 
 const App = () => (
-	<div>
+	<div id="wrapper">
 		<TweetForm />
 		<hr />
 		<FeedList />
